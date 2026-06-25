@@ -1,24 +1,30 @@
 # Observability
 
 ## Purpose
-This document explains why observability is part of Harbor's control-plane foundation.
+Explain why observability is part of Harbor's control-plane foundation.
 
 ## Scope
-This file should describe the kinds of operational visibility Harbor should provide, such as runtime behavior, tool activity, and system health at a conceptual level.
+This file should describe operational visibility for runtime behavior, tool activity, server health, request history, and tool-selection decisions.
+
+## Project Pillars
+- MCP Server Management: observability should show server health, errors, latency, usage, metadata, and tool-use history.
+- Tool Calling Accuracy: observability should make selection, ranking, validation, execution outcomes, and failure modes understandable.
 
 ## Intended Audience
 - Contributors
 - Users
 - Plugin developers
 - Core maintainers
+- AI coding agents
 
 ## Planned Sections
 - Observability overview
-- Signals and events
-- Debugging workflows
-- Operational visibility
+- Server health and usage
+- Tool-call history
+- Selection explainability
+- Dashboard relationship
 
 ## TODO
 - [ ] Define observability goals.
-- [ ] Identify important runtime signals.
-- [ ] Link to future dashboard and telemetry design documents.
+- [ ] Identify core runtime and selection signals.
+- [ ] Link observability concepts to future dashboard design.

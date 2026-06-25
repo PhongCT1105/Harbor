@@ -1,24 +1,30 @@
 # Discovery
 
 ## Purpose
-This document explains how discovery fits into Harbor's control-plane responsibilities.
+Explain how discovery fits into Harbor's control-plane responsibilities.
 
 ## Scope
-This file should cover what discovery means for MCP servers and available capabilities without specifying discovery mechanisms or APIs.
+This file should describe what Harbor needs to learn about MCP servers and tools without specifying discovery mechanisms.
+
+## Project Pillars
+- MCP Server Management: discovery should help Harbor build an accurate view of registered servers, their metadata, and available tools.
+- Tool Calling Accuracy: discovery should provide the capability information needed for later filtering, routing, and ranking.
 
 ## Intended Audience
 - Contributors
 - Users
 - Plugin developers
 - Core maintainers
+- AI coding agents
 
 ## Planned Sections
 - Discovery overview
 - Discoverable entities
 - Discovery lifecycle
-- Relationship to indexing and registry
+- Relationship to registry
+- Relationship to tool selection
 
 ## TODO
 - [ ] Define discovery terminology.
 - [ ] Document discovery goals and boundaries.
-- [ ] Add future design links when available.
+- [ ] Link future design work for server and tool indexing.
